@@ -1,1 +1,1 @@
-# web_scrapinng_challenge
+# web_scraping_challenge
