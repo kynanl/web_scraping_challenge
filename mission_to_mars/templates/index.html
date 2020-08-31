@@ -10,27 +10,29 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1 class="display-3">Mission to Mars</h1>
+  <div class="jumbotron" style="text-align: center;">
+    <h1 class="display-3" style="font-weight: bold;">Mission to Mars</h1>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape</a>
+      <a class="btn btn-primary btn-lg" href="/scrape" role="button" style="text-align: center;">Scrape</a>
     </p>
   </div>
-  <div class="">
+  <div class="" style="padding-left: 50px;">
     <h2>Latest Mars News</h2>
-    <p class="title">{{mars.news_title}} </p>
+    <p class="title" style="font-weight: bold;">{{mars.news_title}} </p>
     <p>{{mars.news_paragraph}} </p>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-sm-4">
-        <h2>Featured Mars Image</h2>
+        <h2 style="text-align: left;">Featured Mars Image</h2>
       </div>
       <div class="col-md-8 col-sm-4">
-        <img class="img-fluid" src={{mars.featured_image}} alt="">
+        <img class="img-fluid" src={{mars.featured_image}} alt="" style="max-width: 100pc;" style="height: 50pc;">
       </div>
 
       <div class="col-md-4 col-sm-2">
@@ -42,20 +44,21 @@
     </div>
     <br>
   </div>
+  <h5 style="padding-left: 50px;" style="font-weight: bold;">Mars Hemispheres</h5>
   <div class="row" id="images" style="margin-bottom: 30px;">
-    <div class="col-md-5">
+    <div class="col-md-5" style="padding-left: 50px;">
       <img class="img-fluid" src={{mars.hemisphere_images[0]["img_url"]|safe}} alt="">
       <h4>{{mars.hemisphere_images[0]["title"]}}</h4>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" style="padding-left: 50px;">
       <img class="img-fluid" src={{mars.hemisphere_images[1]["img_url"]|safe}} alt="">
       <h4>{{mars.hemisphere_images[1]["title"]}}</h4>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" style="padding-left: 50px;">
       <img class="img-fluid" src={{mars.hemisphere_images[2]["img_url"]|safe}} alt="">
       <h4>{{mars.hemisphere_images[2]["title"]}}</h4>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" style="padding-left: 50px;">
       <img class="img-fluid" src={{mars.hemisphere_images[3]["img_url"]|safe}} alt="">
       <h4>{{mars.hemisphere_images[3]["title"]}}</h4>
     </div>
