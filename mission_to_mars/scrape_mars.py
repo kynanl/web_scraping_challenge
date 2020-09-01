@@ -20,7 +20,7 @@ def scrape_news(browser):
     browser.visit(url)
     html = browser.html
     soup = BeautifulSoup(html, 'html.parser')
-
+    time.sleep(3)
     news = soup.find_all('div', class_ ='content_title')
     news_title = news[1].find('a', target = "_self").text
 
